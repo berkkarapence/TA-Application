@@ -1,0 +1,116 @@
+
+GET /applicants
+
+Response is an array of applicants with the following fields
+{
+    "tas": [
+        {
+            "stunum": "",
+            "givenname": "",
+            "familyname": "",
+            "status": "",
+            "year": ""
+        }
+    ]
+}
+
+GET /applicants?status=status
+
+Response has the same structure as the previous request.
+
+{
+    "tas": [
+        {
+            "stunum": "",
+            "givenname": "",
+            "familyname": "",
+            "status": "",
+            "year": ""
+        }
+    ]
+}
+
+GET /applicant?fname=fname
+
+{
+    "stunum": "",
+    "givenname": "",
+    "familyname": "",
+    "status": "",
+    "year": ""
+}
+
+POST /applicant
+Request body contains
+
+{
+    "stunum": "",
+    "givenname": "",
+    "familyname": "",
+    "status": "",
+    "year": "",
+    "courses": [
+        {
+            "code": "",
+            "rank": "",
+            "experience": ""
+        },
+        {
+            "code": "",
+            "rank": "",
+            "experience": ""
+        }
+    ]
+}
+
+Response is "Success" or "Error: duplicate student number"
+
+DELETE /applicant?fname=fname
+DELETE /applicant?stunum=stunum
+
+Response is "Success" or "Error: no such student"
+
+GET /courses
+Response
+{
+    "courses" : [
+        { 
+            "code" : "",
+            "tas" : [
+                {
+                    "stunum" : "",
+                    "givenname": "",
+                    "familyname": "",
+                    "status": "",
+                    "year": "",
+                    "ranking": "",
+                    "experience":""
+                }
+            ]
+        }
+    ]
+}
+
+GET /courses?course=course
+
+Response
+{ 
+    "code" : "",
+    "tas" : [
+        {
+            "stunum" : "",
+            "givenname": "",
+            "familyname": "",
+            "status": "",
+            "year": "",
+            "ranking": "",
+            "experience":""
+        }
+    ]
+}
+
+
+
+
+
+

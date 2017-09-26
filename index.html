@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="scripts/tas.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>TA List</title>
+</head>
+
+<body>
+    <h1>TA Applications</h1>
+
+    <fieldset>
+    <h3>Applicants List</h3>
+    <form id="getapplicants" method="get">
+        <p>Click the button to see the list of TA's</p>
+        <button id="list" type="submit">Applicants List</button>
+            <table id="allapplicants" style="visibility:hidden">
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </table>
+    </form>
+    </fieldset>
+
+    <fieldset>
+    <h3>Find TA from status</h3>
+    <form id="getfromstatus" method="get">
+        <p>Choose a status from the given status list</p>
+        <select id="selectstatus"></select><br><br>
+        <button id="statusbutton" type="submit">Submit</button>
+            <table id="statustable" style="visibility:hidden">
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </table>
+    </form>
+    </fieldset>
+
+    <fieldset>
+        <h3>Search by Family Name</h3>
+        <form id="getfromfamilyname" method="get">
+            <span class="fNamelabel">Type the family name of the TA: </span>
+            <input type="text" id="tafname"><br><br>
+            <button id="fnamebutton" type="submit">Submit</button>
+                <table id="fnametable" style="visibility:hidden">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </table>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <h3>Add Applicant</h3>
+        <form id="add" method="post">
+            <span class="label">Student Number:</span>
+            <input type="text" id="newstunum"/><br>
+            <span class="label">Given Name:</span>
+            <input type="text" id="newgivenname"/><br>
+            <span class="label">Family Name:</span>
+            <input type="text" id="newfamilyname"/><br>
+            <span class="label">Status:</span>
+            <input type="text" id="newstatus"/><br>
+            <span class="label">Year:</span>
+            <input type="text" id="newyear"/><br>
+            <span class="label">Courses:</span>
+            <input type="text" id="newcourses"/><br><br>
+            <input id="addButton" type="submit" value="Submit">
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <h3>Remove Applicant</h3>
+        <form id="removebystunum" method="post">
+            <span class="removelabel">Remove Applicant by student number:</span>
+            <input type="text" id="delstunum"/>
+            <input type="submit" value="Submit"><br>
+        </form>
+        <form id="removebyfname" method="post">
+            <span class="removelabel">Remove Applicant by family name:</span>
+            <input type="text" id="delfname"/>
+            <input type="submit" value="Submit">
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <h3>Course list</h3>
+        <form id="getcourses" method="get">
+            <p>Click the button to see the list of courses</p>
+            <button id="coursebutton" type="submit">Submit</button>
+            <table id="coursetable" style="visibility:hidden">
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <h3>Search for course</h3>
+        <form id="searchcourse" method="get">
+            <span class="courselabel">Type the course you are searching for:</span>
+            <input type="text" id="coursecode"/>
+            <table id="searchcoursetable" style="visibility:hidden">
+                <tr>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </table>
+            <input id="coursesearchbutton" type="submit" value="Submit">
+        </form>
+    </fieldset>
+</body>
+</html>

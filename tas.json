@@ -1,0 +1,89 @@
+{
+    "tas": [ 
+        {
+            "stunum": "111222333",
+            "givenname": "Maurice",
+            "familyname": "Wilkes",
+            "status": "MSc",
+            "year": "2",
+            "courses": [
+                {
+                    "code": "CSC108",
+                    "rank": "1",
+                    "experience": "3"
+                },
+                {
+                    "code": "CSC343",
+                    "rank": "1",
+                    "experience": "2"
+                },
+                {
+                    "code": "CSC236",
+                    "rank": "2",
+                    "experience": "0"
+                    
+                },
+                {
+                    "code": "CSC318",
+                    "rank": "4",
+                    "experience": "0"
+                }
+            ]
+        },
+        {
+            "stunum": "222333444",
+            "givenname": "Alan",
+            "familyname": "Perlis",
+            "status": "PhD",
+            "year": "3",
+            "courses": [
+                {
+                    "code": "CSC108",
+                    "rank": "1",
+                    "experience": "3"
+                },
+                {
+                    "code": "CSC236",
+                    "rank": "3",
+                    "experience": "0"
+                }
+            ]
+        },
+        {
+            "stunum": "333444555",
+            "givenname": "Richard",
+            "familyname": "Hamming",
+            "status": "Undergrad",
+            "year": "3",
+            "courses": [
+                {
+                    "code": "CSC108",
+                    "rank": "2",
+                    "experience": "1"
+                },
+                {
+                    "code": "CSC148",
+                    "rank": "1",
+                    "experience": "0"
+                },
+                {
+                    "code": "CSC236",
+                    "rank": "4",
+                    "experience": "1"
+                    
+                },
+                {
+                    "code": "CSC304",
+                    "rank": "1",
+                    "experience": "1"
+                },
+                {
+                    "code": "CSC369",
+                    "rank": "4",
+                    "experience": "2"
+                }
+                
+            ]
+        }
+    ]
+}
